@@ -220,11 +220,6 @@ BOOL CMFCApplicationfianlDlg::OnInitDialog()
 	m_pFormViewBlack_RIGHT = pView_black_RIGHT;
 	m_pFormViewBlack_RIGHT->ShowWindow(SW_SHOW);
 
-	//git3
-	SetWindowLong(this->GetSafeHwnd(), GWL_EXSTYLE, GetWindowLong(this->GetSafeHwnd(), GWL_EXSTYLE) | WS_EX_LAYERED);
-	int nTransRatio = 10.0; 
-	int nAlpha = nTransRatio * 255 / 100;
-	SetLayeredWindowAttributes(RGB(0, 255, 0), nAlpha, LWA_COLORKEY);
 
 	//whole screen
 	SetWindowPos(NULL, screen_temp*2, 0, cxScreen - screen_temp * 3, cyScreen , 0);
