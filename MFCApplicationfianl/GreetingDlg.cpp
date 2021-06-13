@@ -180,10 +180,8 @@ void CGreetingDlg::OnBnClickedButtonStart()
 	SESSIONEdit.GetWindowText(cstr_session);
 
 
-	//git2
-	//CExampleListener* example = new CExampleListener(strPathName);
-	CExampleListener* example = new CExampleListener(_T("art_demo.pdf"));
-	//CExampleListener* example = new CExampleListener(_T(""));
+	
+	CExampleListener* example = new CExampleListener(strPathName);
 
 
 
@@ -192,14 +190,9 @@ void CGreetingDlg::OnBnClickedButtonStart()
 	sessionContext->sessionPassword = L"sPwd";
 
 
-	//git1
-	//sessionContext->userName = cstr_nick;
-	//sessionContext->token = cstr_session;
-	sessionContext->userName = L"BYH";
-	sessionContext->token = L"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfa2V5IjoiSmtaT096RGt5YmVnN3laSHBSUDkwUE5YTGN0RHpHY0Z5RkVqIiwidmVyc2lvbiI6MSwidXNlcl9pZGVudGl0eSI6IjIwIiwiaWF0IjoxNjIzNTgxNzUwLCJleHAiOjE2MjM2NjgxNTAsInRwYyI6ImNhcDAifQ.UVu27EONhBtC6RJg9nDgdj3109YpBOZejhXzrBHLtb0";
-	//L"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfa2V5IjoiSmtaT096RGt5YmVnN3laSHBSUDkwUE5YTGN0RHpHY0Z5RkVqIiwidmVyc2lvbiI6MSwidXNlcl9pZGVudGl0eSI6IjIwIiwiaWF0IjoxNjIzNDg1NTc2LCJleHAiOjE2MjM1NzE5NzYsInRwYyI6ImNhcDAifQ.F_mRe8Pq4S1kX8KoSqrsPWNoBF8yD20GXZXZbgrd5QI";
-	//L"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfa2V5IjoiSmtaT096RGt5YmVnN3laSHBSUDkwUE5YTGN0RHpHY0Z5RkVqIiwidmVyc2lvbiI6MSwidXNlcl9pZGVudGl0eSI6IjIwIiwiaWF0IjoxNjIzMzkzNjkyLCJleHAiOjE2MjM0ODAwOTIsInRwYyI6ImNhcDAifQ.l5KO8nFJwz9jPF-A3TJQ2nwxPUg-_NHnIjUhnhm88Vc";
-//L"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfa2V5IjoiSmtaT096RGt5YmVnN3laSHBSUDkwUE5YTGN0RHpHY0Z5RkVqIiwidmVyc2lvbiI6MSwidXNlcl9pZGVudGl0eSI6IjIwIiwiaWF0IjoxNjIzMjYzNDE2LCJleHAiOjE2MjMzNDk4MTYsInRwYyI6ImNhcDAifQ.TWbmXQaYCmjoHSuiX-G3Lab4lvVW97xlMpi3xB7tkYE";
+	
+	sessionContext->userName = cstr_nick;
+	sessionContext->token = cstr_session;
 
 
 
