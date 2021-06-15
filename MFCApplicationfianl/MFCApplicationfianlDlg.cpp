@@ -108,14 +108,8 @@ BOOL CMFCApplicationfianlDlg::OnInitDialog()
 	}*/
 
 
-/*
-	SetWindowLong(this->GetSafeHwnd(), GWL_EXSTYLE, GetWindowLong(this->GetSafeHwnd(), GWL_EXSTYLE) | WS_EX_LAYERED);
-	int nTransRatio = 10.0; // 50% 투명화
 
-	int nAlpha = nTransRatio * 255 / 100;
-	//SetLayeredWindowAttributes(RGB(0, 255, 0), nAlpha, LWA_ALPHA); // 투명 적용할 색상(RGB(255,0,255)) 설정
-	SetLayeredWindowAttributes(RGB(0, 255, 0), nAlpha, LWA_COLORKEY);
-*/
+
 	
 
 	screen_temp = 20;
